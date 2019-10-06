@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+}
+
+* div {
+  font-family: 'Playfair Display', serif;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  /* it's pissing me off how headers have default top and bottom margin
+  this should take care of it */
+}
+
+h1 {
+  font-size: 3vmin;
+}
+
+h2 {
+  font-size: 17vmin;
+}
+
+h3 {
+  font-size: 9.5vmin;
+}
+
+h4 {
+  font-size: 4.8vmin;
+  color: pink;
+  line-height: 4vmin;
+  margin-left: 0.5vmin;
+}
+
+
+h5 {
+  line-height: 4vmin;
+  font-size: 6.6vmin;
+  margin-left: 13vmin;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20vmin;
+  margin-left: 20vmin;
+}
+
+.threeColumn {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-right: 11vmin;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  /* background-color: pink; */
+}
+
+.hammer {
+  display: flex;
+  /* background-color: red; */
+  margin-left: 5vmin;
+  background-image: url('hammer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 7vmin;
+  height: 5.7vmin;
+}
+
+.education {
+  /* background-color: blue; */
+}
+
+.column2 {
+  display: flex;
+  /* background-color: teal; */
+  height: 19vmin;
+}
+
+.column3, .column4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  /* background-color: pink; */
+}
+
+.the_most {
+  /* background-color: blue; */
+  height: 8vmin;
+  overflow: hidden;
+  margin-bottom: 0.2vmin;
+  white-space: nowrap;
+  /* this should stop the damn text from wrapping which infuriates me */
+}
+
+.powerful {
+  /* background-color: gold; */
+  background-image: url('barrel.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 38vmin;
+  height: 5vmin;
+}
+
+.front {
+  margin: 0 0 2vmin 1vmin;
+  background-image: url('front.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 6.5vmin;
+  width: 3vmin;
+
+}
+
+.bottomContainer {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  /* for some fucking reason, using flexbox crops 'body.png' automatically
+  aligning self to center stops this according to stackoverflow
+  because align-self is default set to stretch? */
+  /* background-color: violet; */
+}
+
+.weapon {
+  display: flex;
+  background-image: url('body.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 31vmin;
+  width: 38vmin;
+  /* background-color: teal; */
+}
+
+.blank {
+  /* background-color: pink; */
+  width: 290px;
+}
